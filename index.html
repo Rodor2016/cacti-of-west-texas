@@ -5,7 +5,7 @@
 		<title>Cacti of West Texas</title>
 
 		<style>
-			body {
+			html {
 				font-family: "Arial", "Helvetica", sans-serif;
 			}
 
@@ -13,8 +13,14 @@
 				font-style: italic;
 			}
 
-			#table-head {
-				font-weight: bold;
+			<!-- The next 2 CSS properties are for formatting the table -->
+			table {
+				border-collapse: collapse;
+				border: 1px solid black;
+			}
+			th, td {
+				border: 1px solid black;
+				padding: 10px 20px;
 			}
 		</style>
 	</head>
@@ -32,35 +38,38 @@
 
 		<h2>Table of the Cacti in the above list</h2>
 		<table>
-			<tr id="table-head">
-				<th>Species</th>
-				<th>Size</th>
-				<th>Location</th>
-			</tr>
+			<thead>
+				<tr>
+					<th>Species</th>
+					<th>Size</th>
+					<th>Location</th>
+				</tr>
+			</thead>
 
-			<tr>
-				<td class="plant-names">Opuntia ssp.</td>
-				<td>1-4' tall, 1-4' wide</td>
-				<td>Full shade - Full sun; very abundant</td>
-			</tr>
+			<tbody>
+				<tr>
+					<td class="plant-names">Opuntia ssp.</td>
+					<td>1-4' tall, 1-4' wide</td>
+					<td>Full shade - Full sun; very abundant</td>
+				</tr>
 
-			<tr>
-				<td class="plant-names">Ariocarpus fissuratus</td>
-				<td>0-0.5" tall, 2-5" wide</td>
-				<td>Flush to ground, Full sun or under rocks, abundant</td>
-			</tr>
+				<tr>
+					<td class="plant-names">Ariocarpus fissuratus</td>
+					<td>0-0.5" tall, 2-5" wide</td>
+					<td>Flush to ground, Full sun or under rocks, abundant</td>
+				</tr>
 
-			<tr>
-				<td class="plant-names">Epithelantha ssp.</td>
-				<td>1-1.5" tall, ~1" wide</td>
-				<td>Partial shade - Full sun; abundant</td>
-			</tr>
+				<tr>
+					<td class="plant-names">Epithelantha ssp.</td>
+					<td>1-1.5" tall, ~1" wide</td>
+					<td>Partial shade - Full sun; abundant</td>
+				</tr>
 
-			<tr>
-				<td class="plant-names">Lophophora williamsii</td>
-				<td>0-0.5" tall, 0.25-1.5" wide</td>
-				<td>Flush to ground, Partial shade - Full sun, abundant</td>
-			</tr>
+				<tr>
+					<td class="plant-names">Lophophora williamsii</td>
+					<td>0-0.5" tall, 0.25-1.5" wide</td>
+					<td>Flush to ground, Partial shade - Full sun, abundant</td>
+				</tr>	
 		</table>
   	</body>
 </html>
